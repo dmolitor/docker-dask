@@ -1,0 +1,30 @@
+# altair
+# asyncssh
+# awswrangler
+# boto3
+# botocore
+dask[complete]
+dask-ml[complete]
+# dvc
+# gensim
+# linearmodels
+# matplotlib
+# networkx
+# nltk
+# numpy
+# openpyxl
+# pandas
+# pandasgui
+# pip
+# pyhdfe
+# pylint
+# scons
+# seaborn
+# setuptools
+# scikit-learn
+# scipy
+# spacy
+# statsmodels
+# tensorflow
+# wheel
+# xlrd

@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  scheduler:
+    image: djmolitor/dask-worker:python-3.9.7
+    build: ./base/
+    ports:
+      - "8786:8786"
+      - "8787:8787"
+    hostname: scheduler
+    command: ["dask-scheduler"]
+  
+  worker:
+    image: djmolitor/dask-worker:python-3.9.7
+    build: ./base/
+    command: ["dask-worker", "tcp://scheduler:8786"]    
