@@ -9,8 +9,8 @@ services:
       - "8787:8787"
     hostname: scheduler
     command: ["dask-scheduler"]
-  
+
   worker:
     image: djmolitor/dask-worker:python-3.9.7
     build: ./base/
-    command: ["dask-worker", "tcp://scheduler:8786"]    
+    command: ["dask-worker", "tcp://scheduler:8786"]
